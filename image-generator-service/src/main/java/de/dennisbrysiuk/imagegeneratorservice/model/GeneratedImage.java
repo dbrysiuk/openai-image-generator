@@ -2,14 +2,12 @@ package de.dennisbrysiuk.imagegeneratorservice.model;
 
 import lombok.Data;
 
-import java.util.List;
-
 /**
  * @author DennisBrysiuk
  */
 @Data
-public class GenerateImageResponse {
+public class GeneratedImage {
 
-    private List<GeneratedImage> data;
+    private String url;
 
 }

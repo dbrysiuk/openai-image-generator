@@ -12,7 +12,8 @@ import feign.RequestTemplate;
  */
 @Configuration
 public class ImageGeneratorConfig {
-    @Value("${openai.api-key}")
+
+    @Value("${openai.image-generator.api-key}")
     private String apiKey;
 
     @Bean

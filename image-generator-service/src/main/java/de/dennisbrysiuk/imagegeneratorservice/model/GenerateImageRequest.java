@@ -4,6 +4,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import de.dennisbrysiuk.imagegeneratorservice.common.util.ValidSize;
 import lombok.Data;
 
@@ -21,6 +22,7 @@ public class GenerateImageRequest {
 
     @Min(1)
     @Max(10)
-    private int numberOfImages;
+    @JsonProperty("num_images")
+    private int numImages;
 
 }
